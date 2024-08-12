@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a survey form</title>
+    <style>
+        body{
+            background-color: rgb(37, 161, 37);
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            text-align:center;
+        }
+        form{
+            background-color:white;
+            width:500px;
+            margin:50px auto;
+            padding:30px;
+            box-shadow:2px black;
+        }
+        .form-control{
+            text-align:left;
+            margin-bottom:25px;
+        }
+        .form-control label{
+            display:block;
+            margin-top:10px;
+        }
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+
+            border-width:1px;
+            border-style:solid;
+            border-color:grey;
+            border-radius:2px;
+            font-family:inherit;
+            padding:10px;
+            display:block;
+            width:95%;
+        }
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"]{
+            display:inline-block;
+            width:auto;
+        }
+        button{
+            background-color: #05c46b;
+            width:100%;
+            font-family:inherit;
+            font-size:25px;
+            border:1px solid grey;
+            border-radius:2px;
+            display:block;
+            margin-top:55px;
+            margin-bottom:20px;  
+           
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <h1>SLA Survey form</h1>
+    <form id="form">
+        <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" placeholder="Enter Your Name"/>
+        </div>
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter Your email"/>
+        </div>
+        <div class="form-control">
+            <label for="age">Age</label>
+            <input type="number" placeholder="Enter Your Age"/>
+        </div>
+        <div class="form-control">
+            <label for="role">Which role describes you?</label>
+            <select>
+                <option>student</option>
+                <option>Intern</option>
+                <option>Professional</option>
+                <option>other</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>Would you recommend sla to your friends?</label>
+           <label for="yes"><input type="radio" name="gender">yes</label>
+           <label for="no"><input type="radio" name="gender">no</label>
+           <label for="maybe"><input type="radio" name="gender">maybe
+        </label>
+        </div>
+        <div class="form-control">
+            <label>Languages and frameworks known
+                <small>(Check all that apply)</small>
+            </label>
+            <label for="c"><input type="checkbox">C</label>
+            <label for=""><input type="checkbox">C++</label>
+            <label for=""><input type="checkbox">C#</label>
+            <label for=""><input type="checkbox">Java</label>
+            <label for=""><input type="checkbox">Python</label>
+            <label for=""><input type="checkbox">Javascript</label>
+            <label for=""><input type="checkbox">React</label>
+            <label for=""><input type="checkbox">Angular</label>
+            <label for=""><input type="checkbox">Django</label>
+            <label for=""><input type="checkbox">Spring</label>
+            
+        </div>
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+            <textarea placeholder="Enter Your Comment Here">
+            </textarea>
+            </div>
+            <button type="submit">Submit</button>
+           
+    </form>
+    
+</body>
+</html>
